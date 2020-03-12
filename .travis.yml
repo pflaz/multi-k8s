@@ -15,6 +15,6 @@ after_success:
   - docker build -t pawars/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push pawars/multi-client
-  - docker push pawars-multi-nginx
+  - docker push pawars/multi-nginx
   - docker push pawars/multi-server
   - docker push pawars/multi-worker
